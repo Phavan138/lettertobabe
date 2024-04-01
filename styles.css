@@ -1,0 +1,74 @@
+body {
+    font-family: "Dancing Script" , cursive;
+    font-weight: 900;
+    /* background-color: #f0f6ff; */
+    background: url("./purple.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 80%;
+    max-width: 37.5rem;
+    padding: 1.25rem;
+    /* background-color: #DFF5FF; */
+    /* Light pink box */
+    /* border-radius: 1rem; */
+    /* box-shadow: 0 0 0.62rem rgba(0, 0, 0, 0.1); */
+    position: relative;
+    overflow: hidden;
+
+    background: rgba( 255, 255, 255, 0.15 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 6.5px );
+    -webkit-backdrop-filter: blur( 6.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.letter {
+    font-size: 1rem;
+    text-align: justify;
+    padding: 1.25rem;
+    line-height: 1.5;
+    position: relative;
+}
+
+h1 {
+    color: #000;
+}
+
+p {
+    color: #000;
+}
+
+footer {
+    margin-top: 1.25rem;
+    text-align: right;
+    font-style: italic;
+    color: #000;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 480px) {
+    .container {
+        padding-top: 1rem;
+        width: 70%;
+    }
+    .letter {
+        font-size: 14px; /* Smaller font size for mobile */
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 1024px) { /* iPad */
+    .container {
+        width: 70%;
+    }
+}
+}
